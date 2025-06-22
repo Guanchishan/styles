@@ -22,7 +22,7 @@
     <summary>Investigation reports from field excursions (outdoor experiments) conducted as part of the curriculum of the Graduate School of Life and Earth Sciences at the University of Tsukuba are published as the “Annals of Human and Regional Geography.”</summary>
     <updated>2025-06-22T15:17:09+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
-    <version>0.4.0</version>
+    <version>0.4.1</version>
   </info>
   <macro name="editor">
     <names variable="editor" delimiter=", ">
@@ -32,15 +32,31 @@
     </names>
   </macro>
   <macro name="author">
-    <names variable="author">
-      <name and="text" initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
-      <label form="short" strip-periods="true" prefix=" (" suffix=")"/>
-      <et-al font-style="normal"/>
-      <substitute>
-        <names variable="editor"/>
-        <text variable="title"/>
-      </substitute>
-    </names>
+    <choose>
+      <if variable="language" value="ja" match="any">
+        <names variable="author">
+          <name and="text" delimiter="・" initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
+          <label form="short" strip-periods="true" prefix="" suffix=""/>
+          <et-al font-style="normal"/>
+          <substitute>
+            <names variable="editor"/>
+            <names variable="translator"/>
+            <text variable="title"/>
+          </substitute>
+        </names>
+      </if>
+      <else>
+        <names variable="author">
+          <name and="text" initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
+          <label form="short" strip-periods="true" prefix=" (" suffix=")"/>
+          <et-al font-style="normal"/>
+          <substitute>
+            <names variable="editor"/>
+            <text variable="title"/>
+          </substitute>
+        </names>
+      </else>
+    </choose>
   </macro>
   <macro name="author-short">
     <names variable="author">
@@ -53,26 +69,6 @@
       </substitute>
     </names>
   </macro>
-  <layout locale="ja">
-    <macro name="author">
-      <names variable="author">
-        <name and="text" delimiter="・" initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
-        <label form="short" strip-periods="true" prefix="" suffix=""/>
-        <et-al font-style="normal"/>
-        <substitute>
-          <names variable="editor"/>
-          <text variable="title"/>
-        </substitute>
-      </names>
-    </macro>
-    <macro name="editor">
-      <names variable="editor" delimiter="・">
-        <name and="text" initialize-with=". " name-as-sort-order="all"/>
-        <label form="short" prefix="" suffix=""/>
-        <et-al font-style="normal"/>
-      </names>
-    </macro>
-  </layout>
   <macro name="title">
     <choose>
       <if type="book" match="any">
@@ -108,25 +104,27 @@
     </choose>
   </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year">
-    <layout prefix="(" suffix=")" delimiter="; ">
-      <group delimiter=", ">
-        <text macro="author-short"/>
-        <text macro="year-date"/>
-        <text variable="locator"/>
-      </group>
-    </layout>
+    <choose>
+      <if variable="language" value="ja" match="any">
+        <layout prefix="（" suffix="）" delimiter="；">
+          <group delimiter="，">
+            <text macro="author-short"/>
+            <text macro="year-date"/>
+            <text variable="locator"/>
+          </group>
+        </layout>
+      </if>
+      <else>
+        <layout prefix="(" suffix=")" delimiter="; ">
+          <group delimiter=", ">
+            <text macro="author-short"/>
+            <text macro="year-date"/>
+            <text variable="locator"/>
+          </group>
+        </layout>
+      </else>
+    </choose>
   </citation>
-  <layout locale="ja">
-    <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year">
-      <layout prefix="（" suffix="）" delimiter="；">
-        <group delimiter="，">
-          <text macro="author-short"/>
-          <text macro="year-date"/>
-          <text variable="locator"/>
-        </group>
-      </layout>
-    </citation>
-  </layout>
   <bibliography hanging-indent="true" et-al-min="" et-al-use-first="" entry-spacing="0">
     <sort>
       <key macro="author"/>
