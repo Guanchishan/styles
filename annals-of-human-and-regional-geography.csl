@@ -22,8 +22,120 @@
     <summary>Investigation reports from field excursions (outdoor experiments) conducted as part of the curriculum of the Graduate School of Life and Earth Sciences at the University of Tsukuba are published as the “Annals of Human and Regional Geography.”</summary>
     <updated>2025-06-22T15:17:09+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
-    <version>0.4.1</version>
+    <version>0.4.2</version>
   </info>
+  <locale xml:lang="es">
+    <terms>
+      <term name="and" form="long">y</term>
+      <term name="and" form="short">y</term>
+      <term name="et-al" form="long">y otros</term>
+      <term name="et-al" form="short">y otros</term>
+    </terms>
+  </locale>
+  <locale xml:lang="ja">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">編</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
+  <locale xml:lang="zh">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">編</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
+  <locale xml:lang="zh-Hant">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">編</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
+  <locale xml:lang="zh-TW">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">編</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
+  <locale xml:lang="zh-HK">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">編</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
+  <locale xml:lang="zh-CN">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">编</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
+  <locale xml:lang="zh-Hans">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">编</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
+  <locale xml:lang="kr">
+    <terms>
+      <term name="and" form="long">・</term>
+      <term name="and" form="short">・</term>
+      <term name="editor" form="short">編</term>
+      <term name="et-al" form="long">ほか</term>
+      <term name="et-al" form="short">ほか</term>
+      <term name="open-parenthesis">（</term>
+      <term name="close-parenthesis">）</term>
+      <term name="comma">，</term>
+      <term name="period">．</term>
+    </terms>
+  </locale>
   <macro name="editor">
     <names variable="editor" delimiter=", ">
       <name and="text" initialize-with=". " name-as-sort-order="all"/>
@@ -303,25 +415,4 @@
       </layout>
     </bibliography>
   </layout>
-  <locale xml:lang="es">
-    <terms>
-      <term name="and" form="long">y</term>
-      <term name="and" form="short">y</term>
-      <term name="et-al" form="long">y otros</term>
-      <term name="et-al" form="short">y otros</term>
-    </terms>
-  </locale>
-  <locale xml:lang="ja">
-    <terms>
-      <term name="and" form="long">・</term>
-      <term name="and" form="short">・</term>
-      <term name="editor" form="short">編</term>
-      <term name="et-al" form="long">ほか</term>
-      <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
-    </terms>
-  </locale>
 </style>
