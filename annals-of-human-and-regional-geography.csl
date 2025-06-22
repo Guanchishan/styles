@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0.2" initialize="false" demote-non-dropping-particle="sort-only" default-locale="en-GB">
+  <info>
+    <title>Annals of Human and Regional Geography (地域研究年報)</title>
+    <title-short>AHRG</title-short>
+    <id>http://www.zotero.org/styles/annals-of-human-and-regional-geography</id>
+    <link href="http://www.zotero.org/styles/annals-of-human-and-regional-geography" rel="self"/>
+    <link href="http://www.zotero.org/styles/journal-of-international-relations-and-development" rel="template"/>
+    <link href="https://www.geoenv.tsukuba.ac.jp/~chicho/nenpo.html" rel="documentation" xml:lang="ja"/>
+    <author>
+      <name>David DÂNG</name>
+      <uri>https://orcid.org/0000-0003-4349-2212</uri>
+    </author>
+    <contributor>
+      <name>Yi HAN</name>
+    </contributor>
+    <category citation-format="author-date"/>
+    <category field="humanities"/>
+    <category field="geography"/>
+    <eissn>1880-0300</eissn>
+    <issnl>1880-0254</issnl>
+    <summary>Investigation reports from field excursions (outdoor experiments) conducted as part of the curriculum of the Graduate School of Life and Earth Sciences at the University of Tsukuba are published as the “Annals of Human and Regional Geography.”</summary>
+    <updated>2025-06-22T09:25:42+00:00</updated>
+    <version>0.0.1</version>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <macro name="editor">
+    <names variable="editor">
+      <name and="text" initialize="true"/>
+      <label form="short" prefix=" " suffix="."/>
+    </names>
+  </macro>
+  <macro name="author">
+    <names variable="author" font-variant="normal" font-weight="normal" vertical-align="baseline">
+      <name and="text" initialize-with="." name-as-sort-order="first"/>
+      <label form="short" prefix=" (" suffix=")"/>
+      <substitute>
+        <names variable="editor"/>
+        <names variable="translator"/>
+        <text variable="title"/>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="author-short">
+    <names variable="author">
+      <name form="short" and="text"/>
+      <substitute>
+        <names variable="editor"/>
+        <names variable="translator"/>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="access">
+    <choose>
+      <if type="webpage post post-weblog" match="any">
+        <group delimiter=" ">
+          <text variable="URL"/>
+          <group prefix="[" suffix="]">
+            <text term="cited" text-case="capitalize-first" suffix=" "/>
+            <date date-parts="year-month" form="text" variable="accessed"/>
+          </group>
+        </group>
+      </if>
+    </choose>
+  </macro>
+  <macro name="title">
+    <choose>
+      <if type="thesis">
+        <text variable="title"/>
+      </if>
+      <else-if type="bill book graphic legal_case legislation motion_picture song" match="any">
+        <text variable="title" font-style="italic"/>
+      </else-if>
+      <else>
+        <text variable="title" quotes="false"/>
+      </else>
+    </choose>
+    <text variable="original-title" prefix=" [" suffix="]"/>
+  </macro>
+  <macro name="publisher">
+    <group delimiter=", ">
+      <text variable="publisher"/>
+      <text variable="publisher-place"/>
+    </group>
+  </macro>
+  <macro name="year-date">
+    <choose>
+      <if variable="issued">
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </if>
+      <else>
+        <text term="no date" form="short"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="day-month">
+    <date variable="issued">
+      <date-part name="month"/>
+      <date-part name="day" prefix=" "/>
+    </date>
+  </macro>
+  <macro name="edition">
+    <choose>
+      <if is-numeric="edition">
+        <group delimiter=" ">
+          <number variable="edition" form="ordinal"/>
+          <text term="edition" form="short"/>
+        </group>
+      </if>
+      <else>
+        <text variable="edition" suffix="."/>
+      </else>
+    </choose>
+  </macro>
+  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="false" collapse="year">
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=", ">
+        <text macro="author-short"/>
+        <text macro="year-date"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="true" et-al-min="8" et-al-use-first="1">
+    <sort>
+      <key macro="author"/>
+      <key variable="issued"/>
+      <key variable="year-suffix"/>
+    </sort>
+    <layout suffix=".">
+      <group delimiter=" ">
+        <text macro="author" strip-periods="false" quotes="false" font-style="normal" font-weight="normal"/>
+        <text macro="year-date" prefix="(" suffix="):"/>
+        <choose>
+          <if type="article-newspaper article-magazine" match="any">
+            <text macro="title" prefix=" " suffix="."/>
+            <group delimiter=", " prefix=" ">
+              <text variable="container-title" font-style="italic"/>
+              <text macro="day-month"/>
+              <text variable="edition"/>
+              <text variable="page"/>
+            </group>
+          </if>
+          <else-if type="report" match="any">
+            <group delimiter=", ">
+              <text macro="title"/>
+              <text variable="collection-title"/>
+              <group delimiter=", ">
+                <text variable="publisher"/>
+                <text variable="publisher-place"/>
+              </group>
+            </group>
+          </else-if>
+          <else-if type="thesis">
+            <group delimiter=". " prefix=" ">
+              <text macro="title"/>
+              <group delimiter=", ">
+                <text variable="genre"/>
+                <text variable="publisher"/>
+              </group>
+            </group>
+          </else-if>
+          <else-if type="bill book graphic legal_case legislation motion_picture report song webpage post post-weblog" match="any">
+            <text macro="editor" suffix=": "/>
+            <group delimiter=". ">
+              <text macro="title"/>
+              <text macro="edition"/>
+              <text macro="publisher"/>
+              <text macro="access"/>
+            </group>
+          </else-if>
+          <else-if type="chapter paper-conference" match="any">
+            <group delimiter=". ">
+              <text macro="title" prefix=" " suffix="."/>
+              <group delimiter=", ">
+                <group delimiter=" " prefix=" ">
+                  <group delimiter=": ">
+                    <text term="in" text-case="capitalize-first"/>
+                    <text macro="editor"/>
+                  </group>
+                  <group delimiter=", ">
+                    <text variable="container-title" font-style="italic"/>
+                    <text variable="page"/>
+                  </group>
+                </group>
+              </group>
+              <text variable="volume"/>
+              <text variable="collection-title" font-style="italic"/>
+              <text macro="publisher"/>
+            </group>
+          </else-if>
+          <else>
+            <group suffix=".">
+              <text macro="title" prefix=" "/>
+              <text macro="editor" prefix=" "/>
+            </group>
+            <group delimiter=" " prefix=" ">
+              <text variable="container-title" font-style="italic" suffix=", "/>
+              <group delimiter=", ">
+                <text variable="volume" font-weight="bold"/>
+                <text variable="page"/>
+              </group>
+            </group>
+          </else>
+        </choose>
+      </group>
+    </layout>
+  </bibliography>
+</style>
