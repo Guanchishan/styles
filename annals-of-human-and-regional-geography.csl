@@ -20,9 +20,9 @@
     <issn>1880-0254</issn>
     <eissn>1880-0300</eissn>
     <summary>Investigation reports from field excursions (outdoor experiments) conducted as part of the curriculum of the Graduate School of Life and Earth Sciences at the University of Tsukuba are published as the “Annals of Human and Regional Geography.”</summary>
-    <updated>2025-06-22T12:59:13+00:00</updated>
+    <updated>2025-06-22T14:22:54+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
-    <version>0.1.0</version>
+    <version>0.2.2</version>
   </info>
   <macro name="editor">
     <names variable="editor" delimiter=", ">
@@ -120,37 +120,61 @@
         <else-if type="chapter paper-conference" match="any">
           <group delimiter=". ">
             <text macro="title" prefix=" " suffix="."/>
-            <text macro="editor" suffix=": "/>
-            <text variable="container-title" font-style="italic" suffix="."/>
+            <choose>
+              <if variable="container-title">
+                <text variable="container-title" font-style="italic" suffix="."/>
+              </if>
+            </choose>
             <group delimiter=", " prefix=" ">
-              <text macro="publisher"/>
-              <text variable="page" prefix=", "/>
+              <choose>
+                <if variable="publisher">
+                  <text macro="publisher"/>
+                </if>
+              </choose>
+              <choose>
+                <if variable="page">
+                  <text variable="page"/>
+                </if>
+              </choose>
             </group>
           </group>
         </else-if>
         <else>
           <group delimiter=". " prefix=" ">
             <text macro="title"/>
-            <group delimiter="">
-              <text variable="container-title" form="" font-style="italic" suffix=", "/>
-              <choose>
-                <if variable="volume">
-                  <text variable="volume" font-weight="bold">
-                    <choose>
-                      <if variable="issue">
-                        <text prefix="(" variable="issue" suffix="), "/>
-                        <else/>
-                        <text suffix=", "/>
-                      </if>
-                    </choose>
-                  </text>
-                </if>
-                <else-if variable="issue">
-                  <text variable="issue" font-weight="bold" suffix=", "/>
-                </else-if>
-              </choose>
-              <text variable="page"/>
-            </group>
+            <choose>
+              <if variable="container-title">
+                <group delimiter="">
+                  <text variable="container-title" form="" font-style="italic"/>
+                  <choose>
+                    <if variable="volume issue page">
+                      <text value=", "/>
+                    </if>
+                  </choose>
+                </group>
+              </if>
+            </choose>
+            <choose>
+              <if variable="volume">
+                <text variable="volume" font-weight="bold">
+                  <choose>
+                    <if variable="issue">
+                      <text prefix="(" variable="issue" suffix="), "/>
+                      <else/>
+                      <text suffix=", "/>
+                    </if>
+                  </choose>
+                </text>
+              </if>
+              <else-if variable="issue">
+                <text variable="issue" font-weight="bold" suffix=", "/>
+              </else-if>
+            </choose>
+            <choose>
+              <if variable="page">
+                <text variable="page"/>
+              </if>
+            </choose>
           </group>
         </else>
       </choose>
