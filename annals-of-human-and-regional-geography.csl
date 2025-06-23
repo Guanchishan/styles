@@ -20,120 +20,103 @@
     <issn>1880-0254</issn>
     <eissn>1880-0300</eissn>
     <summary>Investigation reports from field excursions (outdoor experiments) conducted as part of the curriculum of the Graduate School of Life and Earth Sciences at the University of Tsukuba are published as the “Annals of Human and Regional Geography.”</summary>
-    <updated>2025-06-22T15:17:09+00:00</updated>
+    <updated>2025-06-23T10:16:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
-    <version>0.4.2</version>
   </info>
+  <locale xml:lang="en">
+    <terms>
+      <term name="and" form="long">and</term>
+      <term name="and" form="short">and</term>
+      <term name="et-al" form="long">et al.</term>
+      <term name="et-al" form="short">et al.</term>
+      <term name="editor" form="short">
+        <single>ed.</single>
+        <multiple>eds.</multiple>
+      </term>
+    </terms>
+  </locale>
   <locale xml:lang="es">
     <terms>
       <term name="and" form="long">y</term>
       <term name="and" form="short">y</term>
       <term name="et-al" form="long">y otros</term>
       <term name="et-al" form="short">y otros</term>
+      <term name="editor" form="short">
+        <single>ed.</single>
+        <multiple>eds.</multiple>
+      </term>
     </terms>
   </locale>
   <locale xml:lang="ja">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">編</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">編</term>
     </terms>
   </locale>
   <locale xml:lang="zh">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">編</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">編</term>
     </terms>
   </locale>
   <locale xml:lang="zh-Hant">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">編</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">編</term>
     </terms>
   </locale>
   <locale xml:lang="zh-TW">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">編</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">編</term>
     </terms>
   </locale>
   <locale xml:lang="zh-HK">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">編</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">編</term>
     </terms>
   </locale>
   <locale xml:lang="zh-CN">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">编</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">编</term>
     </terms>
   </locale>
   <locale xml:lang="zh-Hans">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">编</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">编</term>
     </terms>
   </locale>
   <locale xml:lang="kr">
     <terms>
       <term name="and" form="long">・</term>
       <term name="and" form="short">・</term>
-      <term name="editor" form="short">編</term>
       <term name="et-al" form="long">ほか</term>
       <term name="et-al" form="short">ほか</term>
-      <term name="open-parenthesis">（</term>
-      <term name="close-parenthesis">）</term>
-      <term name="comma">，</term>
-      <term name="period">．</term>
+      <term name="editor" form="short">編</term>
     </terms>
   </locale>
   <macro name="editor">
@@ -147,7 +130,7 @@
     <choose>
       <if variable="language" value="ja" match="any">
         <names variable="author">
-          <name and="text" delimiter="・" initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
+          <name delimiter="・" initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
           <label form="short" strip-periods="true" prefix="" suffix=""/>
           <et-al font-style="normal"/>
           <substitute>
@@ -159,7 +142,7 @@
       </if>
       <else>
         <names variable="author">
-          <name and="text" initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
+          <name and="text" delimiter=", " initialize-with=". " name-as-sort-order="all" given-as-initials="true"/>
           <label form="short" strip-periods="true" prefix=" (" suffix=")"/>
           <et-al font-style="normal"/>
           <substitute>
@@ -242,177 +225,175 @@
       <key macro="author"/>
       <key variable="title"/>
     </sort>
-    <layout suffix=".">
-      <group delimiter=". " prefix=" ">
-        <text macro="author"/>
-        <text macro="editor"/>
-      </group>
-      <date variable="issued" prefix=" (" suffix="): ">
-        <date-part name="year"/>
-      </date>
-      <choose>
-        <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
-          <group delimiter=". " prefix=" ">
-            <text macro="title" font-style="italic"/>
-            <text macro="edition"/>
-            <text macro="publisher"/>
+    <choose>
+      <if variable="language" value="ja" match="any">
+        <layout suffix=". ">
+          <group delimiter=". " prefix="">
+            <text macro="author"/>
+            <text macro="editor"/>
           </group>
-        </if>
-        <else-if type="chapter paper-conference" match="any">
-          <group delimiter=". ">
-            <text macro="title" prefix=" " suffix="."/>
-            <choose>
-              <if variable="container-title">
-                <text variable="container-title" font-style="italic" suffix="."/>
-              </if>
-            </choose>
-            <group delimiter=", " prefix=" ">
+          <date variable="issued" prefix=" (" suffix="): ">
+            <date-part name="year"/>
+          </date>
+          <choose>
+            <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
+              <group delimiter=". " prefix="">
+                <text macro="title" font-style="italic"/>
+                <text macro="edition"/>
+                <text macro="publisher"/>
+              </group>
+            </if>
+            <else-if type="chapter paper-conference" match="any">
+              <text macro="title" prefix="" suffix=". "/>
               <choose>
-                <if variable="publisher">
-                  <text macro="publisher"/>
+                <if variable="container-title">
+                  <text variable="container-title" font-style="italic" suffix=". "/>
                 </if>
+              </choose>
+              <group delimiter=". ">
+                <group delimiter=", " prefix="">
+                  <choose>
+                    <if variable="publisher">
+                      <text macro="publisher"/>
+                    </if>
+                  </choose>
+                  <choose>
+                    <if variable="page">
+                      <text variable="page"/>
+                    </if>
+                  </choose>
+                </group>
+              </group>
+            </else-if>
+            <else>
+              <text macro="title" suffix=". "/>
+              <choose>
+                <if variable="container-title">
+                  <group delimiter="">
+                    <text variable="container-title" form="" font-style="italic"/>
+                    <choose>
+                      <if variable="volume">
+                        <text value=", "/>
+                      </if>
+                      <else-if variable="issue">
+                        <text value=", "/>
+                      </else-if>
+                      <else-if variable="page">
+                        <text value=", "/>
+                      </else-if>
+                    </choose>
+                  </group>
+                </if>
+              </choose>
+              <choose>
+                <if variable="volume">
+                  <text variable="volume" font-weight="bold">
+                    <choose>
+                      <if variable="issue">
+                        <text prefix="(" variable="issue" suffix="), "/>
+                        <else/>
+                        <text suffix=", "/>
+                      </if>
+                    </choose>
+                  </text>
+                </if>
+                <else-if variable="issue">
+                  <text variable="issue" font-weight="bold" suffix=", "/>
+                </else-if>
               </choose>
               <choose>
                 <if variable="page">
                   <text variable="page"/>
                 </if>
               </choose>
-            </group>
+            </else>
+          </choose>
+        </layout>
+      </if>
+      <else>
+        <layout suffix=".">
+          <group delimiter=". " prefix=" ">
+            <text macro="author"/>
+            <text macro="editor"/>
           </group>
-        </else-if>
-        <else>
-          <text macro="title" suffix=". "/>
+          <date variable="issued" prefix=" (" suffix="): ">
+            <date-part name="year"/>
+          </date>
           <choose>
-            <if variable="container-title">
-              <group delimiter="">
-                <text variable="container-title" form="" font-style="italic"/>
-                <choose>
-                  <if variable="volume">
-                    <text value=", "/>
-                  </if>
-                  <else-if variable="issue">
-                    <text value=", "/>
-                  </else-if>
-                  <else-if variable="page">
-                    <text value=", "/>
-                  </else-if>
-                </choose>
+            <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
+              <group delimiter=". " prefix=" ">
+                <text macro="title" font-style="italic"/>
+                <text macro="edition"/>
+                <text macro="publisher"/>
               </group>
             </if>
-          </choose>
-          <choose>
-            <if variable="volume">
-              <text variable="volume" font-weight="bold">
-                <choose>
-                  <if variable="issue">
-                    <text prefix="(" variable="issue" suffix="), "/>
-                    <else/>
-                    <text suffix=", "/>
-                  </if>
-                </choose>
-              </text>
-            </if>
-            <else-if variable="issue">
-              <text variable="issue" font-weight="bold" suffix=", "/>
-            </else-if>
-          </choose>
-          <choose>
-            <if variable="page">
-              <text variable="page"/>
-            </if>
-          </choose>
-        </else>
-      </choose>
-    </layout>
-  </bibliography>
-  <layout locale="ja">
-    <bibliography hanging-indent="true" et-al-min="" et-al-use-first="" entry-spacing="0">
-      <sort>
-        <key macro="author"/>
-        <key variable="title"/>
-      </sort>
-      <layout suffix="．">
-        <group delimiter="．" prefix="">
-          <text macro="author"/>
-          <text macro="editor"/>
-        </group>
-        <date variable="issued" prefix="（" suffix="）：">
-          <date-part name="year"/>
-        </date>
-        <choose>
-          <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
-            <group delimiter="．" prefix="">
-              <text macro="title" font-style="italic"/>
-              <text macro="edition"/>
-              <text macro="publisher"/>
-            </group>
-          </if>
-          <else-if type="chapter paper-conference" match="any">
-            <group delimiter="．">
-              <text macro="title" prefix="" suffix="．"/>
+            <else-if type="chapter paper-conference" match="any">
+              <text macro="title" prefix=" " suffix="."/>
               <choose>
                 <if variable="container-title">
-                  <text variable="container-title" font-style="italic" suffix="．"/>
+                  <text variable="container-title" font-style="italic" suffix="."/>
                 </if>
               </choose>
-              <group delimiter="，" prefix="">
-                <choose>
-                  <if variable="publisher">
-                    <text macro="publisher"/>
-                  </if>
-                </choose>
-                <choose>
-                  <if variable="page">
-                    <text variable="page"/>
-                  </if>
-                </choose>
-              </group>
-            </group>
-          </else-if>
-          <else>
-            <text macro="title" suffix="．"/>
-            <choose>
-              <if variable="container-title">
-                <group delimiter="">
-                  <text variable="container-title" form="" font-style="italic"/>
+              <group delimiter=". ">
+                <group delimiter=", " prefix=" ">
                   <choose>
-                    <if variable="volume">
-                      <text value="，"/>
+                    <if variable="publisher">
+                      <text macro="publisher"/>
                     </if>
-                    <else-if variable="issue">
-                      <text value="，"/>
-                    </else-if>
-                    <else-if variable="page">
-                      <text value="，"/>
-                    </else-if>
+                  </choose>
+                  <choose>
+                    <if variable="page">
+                      <text variable="page"/>
+                    </if>
                   </choose>
                 </group>
-              </if>
-            </choose>
-            <choose>
-              <if variable="volume">
-                <text variable="volume" font-weight="bold">
-                  <choose>
-                    <if variable="issue">
-                      <text prefix="（" variable="issue" suffix="），"/>
-                      <else/>
-                      <text suffix="，"/>
-                    </if>
-                  </choose>
-                </text>
-              </if>
-              <else-if variable="issue">
-                <text variable="issue" font-weight="bold" suffix="，"/>
-              </else-if>
-            </choose>
-            <choose>
-              <if variable="page">
-                <text variable="page"/>
-              </if>
-            </choose>
-          </else>
-        </choose>
-      </layout>
-    </bibliography>
-  </layout>
+              </group>
+            </else-if>
+            <else>
+              <text macro="title" suffix=". "/>
+              <choose>
+                <if variable="container-title">
+                  <group delimiter="">
+                    <text variable="container-title" form="" font-style="italic"/>
+                    <choose>
+                      <if variable="volume">
+                        <text value=", "/>
+                      </if>
+                      <else-if variable="issue">
+                        <text value=", "/>
+                      </else-if>
+                      <else-if variable="page">
+                        <text value=", "/>
+                      </else-if>
+                    </choose>
+                  </group>
+                </if>
+              </choose>
+              <choose>
+                <if variable="volume">
+                  <text variable="volume" font-weight="bold">
+                    <choose>
+                      <if variable="issue">
+                        <text prefix="(" variable="issue" suffix="), "/>
+                        <else/>
+                        <text suffix=", "/>
+                      </if>
+                    </choose>
+                  </text>
+                </if>
+                <else-if variable="issue">
+                  <text variable="issue" font-weight="bold" suffix=", "/>
+                </else-if>
+              </choose>
+              <choose>
+                <if variable="page">
+                  <text variable="page"/>
+                </if>
+              </choose>
+            </else>
+          </choose>
+        </layout>
+      </else>
+    </choose>
+  </bibliography>
 </style>
